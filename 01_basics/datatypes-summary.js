@@ -40,3 +40,43 @@ myFunction()
 console.log("Funciton data type : ", typeof myFunction)
 console.log("Data type of heros : ", typeof heros)
 console.log("Data type of myObj ;", typeof myObj)
+
+
+
+console.log("============================================== Memory ================================")
+
+// ============================================== Memory ================================
+
+
+// Stack  (Primitive)
+
+let myYoutubename = "VishalRathodyoutube"
+
+let anotherName = myYoutubename
+
+console.log("anotherName :", anotherName);
+console.log("myYoutubename :", myYoutubename);
+
+anotherName = "chaiaurcode"
+
+console.log("anotherName :", anotherName)
+console.log("myYoutubename :", myYoutubename)
+
+// Heap (Non-Primitive)
+
+let userOne = {
+    
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+console.log("UserOne :", userOne)
+console.log("UserTwo :", userTwo)
+
+userTwo.email = "rathod@google.com"
+
+console.log("UserOne :", userOne)
+console.log("UserTwo :", userTwo)
+
