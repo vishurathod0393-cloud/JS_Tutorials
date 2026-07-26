@@ -1,5 +1,3 @@
-
-
 const accountId = 12345
 let accountEmail = "viahal@google.com"
 var acccountPassword = "123456"
