@@ -41,6 +41,6 @@ const url = "https://vishal.com//vishal%30rathod"
 console.log(url);
 console.log(url.replace('%30', '-'))
 
-// split => saprate the text on given basis 
+// split => saprate the text on given basis
 
 console.log(url.split('//'))
