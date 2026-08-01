@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Vishal Rathod",
+    "email": "vishal@example.com",
+    "age": 24,
+    "gender": "Male",
+    "city": "Mumbai",
+    "country": "India",
+    "phone": "9876543210",
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com",
+    "age": 27,
+    "gender": "Male",
+    "city": "Pune",
+    "country": "India",
+    "phone": "9876543211",
+    "isActive": false
+  },
+  {
+    "id": 3,
+    "name": "Priya Patel",
+    "email": "priya@example.com",
+    "age": 23,
+    "gender": "Female",
+    "city": "Ahmedabad",
+    "country": "India",
+    "phone": "9876543212",
+    "isActive": true
+  }
+]
