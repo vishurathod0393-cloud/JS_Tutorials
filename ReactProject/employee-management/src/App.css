@@ -1,0 +1,370 @@
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+
+/* =========================
+   MAIN APP
+========================= */
+
+.app {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.app h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+
+/* Inputs */
+
+form input,
+form select {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+
+  font-size: 15px;
+  outline: none;
+
+  background: #ffffff;
+  transition: 0.2s;
+  color: #111827;
+}
+
+
+/* Input Focus */
+
+form input:focus,
+form select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* Form Button */
+
+form button {
+  grid-column: span 2;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 7px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+form button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   HR
+========================= */
+
+hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 30px 0;
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-bar {
+  background: #ffffff;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+  display: flex;
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+
+/* Search Input */
+
+.search-bar input,
+.search-bar select {
+  flex: 1;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 7px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  background: white;
+}
+
+
+/* Search Focus */
+
+.search-bar input:focus,
+.search-bar select:focus {
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   EMPLOYEE LIST
+========================= */
+
+.employee-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+
+/* =========================
+   EMPLOYEE CARD
+========================= */
+
+.employee-card {
+  background: #ffffff;
+
+  padding: 20px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 4px 15px
+    rgba(0, 0, 0, 0.06);
+
+  transition: 0.2s;
+
+  border: 1px solid #eef0f4;
+}
+
+.employee-card:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px
+    rgba(0, 0, 0, 0.1);
+}
+
+
+/* Employee Name */
+
+.employee-card h3 {
+  font-size: 20px;
+
+  margin-bottom: 12px;
+
+  color: #111827;
+}
+
+
+/* Employee Details */
+
+.employee-card p {
+  margin-bottom: 8px;
+
+  font-size: 14px;
+
+  color: #6b7280;
+}
+
+
+/* =========================
+   EMPLOYEE BUTTONS
+========================= */
+
+.employee-card button {
+  margin-top: 15px;
+
+  margin-right: 10px;
+
+  padding: 9px 15px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+
+/* Edit */
+
+.employee-card button:first-of-type {
+  background: #2563eb;
+
+  color: white;
+}
+
+.employee-card button:first-of-type:hover {
+  background: #1d4ed8;
+}
+
+
+/* Delete */
+
+.employee-card button:last-of-type {
+  background: #ef4444;
+
+  color: white;
+}
+
+.employee-card button:last-of-type:hover {
+  background: #dc2626;
+}
+
+
+/* =========================
+   EMPTY MESSAGE
+========================= */
+
+.empty {
+  text-align: center;
+
+  padding: 40px;
+
+  color: #6b7280;
+
+  font-size: 16px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .app {
+    width: 94%;
+    margin: 25px auto;
+  }
+
+  .app h1 {
+    font-size: 26px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  form button {
+    grid-column: span 1;
+  }
+
+  .search-bar {
+    flex-direction: column;
+  }
+
+  .employee-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .app {
+    width: 95%;
+  }
+
+  form {
+    padding: 18px;
+  }
+
+  .search-bar {
+    padding: 15px;
+  }
+
+  .employee-card {
+    padding: 16px;
+  }
+
+  .employee-card h3 {
+    font-size: 18px;
+  }
+
+  .employee-card button {
+    padding: 8px 12px;
+  }
+}
+
